@@ -1,6 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
+<?php
+
+require '../core/processContactForm.php';
+
+$content=<<<EOT
 
         <meta charset="UTF-8">
         <title >Roman Nunez</title>
@@ -9,19 +11,6 @@
     </head>
     <body>
 
-      <header>
-        <span class="logo">My WebSite</span>
-        <a id="toggleMenu">Menu<a></a>
-        <nav>
-            <ul >
-              <li><a href="index.html">Home</a></li>
-              <li><a href="resume.html">Resume</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-            
-          </nav>
-
-        </header>
         <main> 
           <article>
             <h1>Roman Nunez</h1>
@@ -99,4 +88,7 @@
           );
         </script>
     </body>
-</html>
+
+EOT;
+
+require '../core/layout.php';
