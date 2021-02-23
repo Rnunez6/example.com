@@ -1,5 +1,8 @@
 <?php
 include '../../core/db_connect.php';
+require '../../core/bootstrap.php';
+checkSession();
+
 $input = filter_input_array(INPUT_GET);
 $id = !(empty($input['id']))? $input['id']:null;
 $email = !(empty($input['email']))? $input['email']:null;

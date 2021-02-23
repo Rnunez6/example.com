@@ -2,6 +2,10 @@
 require '../../core/functions.php';
 require '../../config/keys.php';
 require '../../core/db_connect.php';
+require '../../core/session.php';
+
+checkSession();
+
 // Get the post
 $get = filter_input_array(INPUT_GET);
 $id = $get['id'];

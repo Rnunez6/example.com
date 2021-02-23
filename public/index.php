@@ -1,5 +1,6 @@
 <?php
 require '../core/functions.php';
+require '../core/bootstrap.php';
 $meta=[];
 $meta['title']='Roman Homepage';
 $content=<<<EOT
