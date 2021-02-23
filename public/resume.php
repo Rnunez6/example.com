@@ -2,13 +2,11 @@
 
 require '../core/processContactForm.php';
 
-$content=<<<EOT
 
-        <meta charset="UTF-8">
-        <title >Roman Nunez</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" type="text/css" href="./dist/css/main.min.css">
-    </head>
+$meta=[];
+$meta['title']='Roman Resume';
+$content=<<<EOT
+   
     <body>
 
         <main> 
@@ -67,13 +65,10 @@ $content=<<<EOT
               <p style="text-align:left;">Morton College, Cicero, IL -   <span style="float:right;"> May 2011 </span>
             <br><b>Associate in Science </b></br>
           </p>
-          
-
         
         </main>  
      
-                  <script>
-
+        <script>
           var toggleMenu = document.getElementById('toggleMenu');
           var nav = document.querySelector('nav');
           toggleMenu.addEventListener(

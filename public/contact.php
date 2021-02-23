@@ -1,11 +1,12 @@
 <?php
 
+$meta=[];
+$meta['title']='Roman contacts';
+
 require '../core/processContactForm.php';
 
 //Build the page metadata
-$meta = [];
-$meta['description'] = "Contact Roman for web development";
-$meta['keywords'] = "Hello, I am Roman ";
+
 
 $content = <<<EOT
 <form action="contact.php" method="POST">

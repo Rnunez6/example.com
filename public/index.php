@@ -1,17 +1,12 @@
 <?php
 require '../core/functions.php';
 $meta=[];
-$meta['title']='Hello, I am Roman Nunez';
-$meta['description']='Hello, I am Roman Nunez';
+$meta['title']='Roman Homepage';
 $content=<<<EOT
+     
 
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">      
-       
-          <p>I am learning html. I'm in Agile Full Stack Web and Hybrid Mobile Application Development right now.</p>
-
-        
+        <h1> Hello </h1>       
+        <p>I am learning html. I'm in Agile Full Stack Web and Hybrid Mobile Application Development right now.</p>
         <script>
 
           var toggleMenu = document.getElementById('toggleMenu');
