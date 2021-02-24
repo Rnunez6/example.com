@@ -1,8 +1,6 @@
 <?php
 
 require '../core/processContactForm.php';
-require '../core/session.php';
-checkSession();
 
 $meta=[];
 $meta['title']='Roman Resume';

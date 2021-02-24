@@ -1,7 +1,7 @@
 <?php
 require '../../core/functions.php';
 require '../../core/db_connect.php';
-require '../../core/session.php';
+require '../core/bootstrap.php';
 
 checkSession();
 

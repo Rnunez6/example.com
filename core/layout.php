@@ -42,20 +42,16 @@ function active($name){
       <header>
         <nav>
             <ul>
-              <li><a href="index.php">Home</a></li>
-              <li><a href="resume.php">Resume</a></li>
-              <li><a href="contact.php">Contact</a></li>
-              <li class="nav-item">
-              <a class="nav-link" href="logout.php">Logout</a>
-              </li>
+            
+              <li><a class="nav-link<?php echo active('index.php');?>" href="http://localhost/example.com/public/index.php"> Home</a></li>
+              <li><a class="nav-link<?php echo active('resume.php');?>" href="http://localhost/example.com/public/resume.php">Resume</a></li>
+              <li><a class="nav-link<?php echo active('contact.php');?>"href="http://localhost/example.com/public/contact.php">Contact</a></li>
+              <li><a class="nav-link<?php echo active('logout.php');?>"href="http://localhost/example.com/public/logout.php">Logout</a></li>
+              <li><a class="nav-link<?php echo active('login.php');?>"href="http://localhost/example.com/public/login.php">Login</a></li>
+              <li><a class="nav-link<?php echo active('register.php');?>"href="http://localhost/example.com/public/register.php">Register</a></li>
+              <li><a class="nav-link<?php echo active('posts.php');?>"href="http://localhost/example.com/public/posts/index.php">Posts</a></li>
+              <li><a class="nav-link<?php echo active('users.php');?>"href="http://localhost/example.com/public/users/index.php">User</a></li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="login.php">Login</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="register.php">Register</a>
-            </li>
             </ul>
           </nav>
         </header>
@@ -75,8 +71,9 @@ function active($name){
         <div id="Footer" class="clearfix">
             <small>&copy; 2017 - MyAwesomeSite.com</small>
             <ul role="navigation">
-                <li><a href="terms.html">Terms</a></li>
-                <li><a href="privacy.html">Privacy</a></li>
+                <li><a class="nav-link<?php echo active('terms.php');?>"href="http://localhost/example.com/public/terms.php">Terms</a></li>
+                <li><a class="nav-link<?php echo active('privacy.php');?>"href="http://localhost/example.com/public/privacy.php">Privacy</a></li>
+                <li><a class="nav-link<?php echo active('cookies.php');?>"href="http://localhost/example.com/public/cookies.php">Cookies</a></li>
             </ul>
         </div>
     </div>

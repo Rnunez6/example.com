@@ -1,3 +1,9 @@
+<?php
+require '../core/bootstrap.php';
+
+$content = <<<EOT
+
+<main>
 <h1>Terms and Conditions</h1>
 <p>Last updated: February 23, 2021</p>
 <p>Please read these terms and conditions carefully before using Our Service.</p>
@@ -80,3 +86,8 @@ You agree that the original English text shall prevail in the case of a dispute.
 <ul>
 <li>By visiting this page on our website: <a href="contact.com" rel="external nofollow noopener" target="_blank">contact.com</a></li>
 </ul>
+</main>
+
+EOT;
+
+require '../core/layout.php';

@@ -8,7 +8,7 @@ $input = filter_input_array(INPUT_POST,[
     'email'=>FILTER_SANITIZE_EMAIL,
     'password'=>FILTER_UNSAFE_RAW
 ]);
-
+$message = null;
 // 3. Check for a POST request
 if(!empty($input)){
 
@@ -32,6 +32,8 @@ if(!empty($input)){
             // 6.2 Redirect the user
             header('LOCATION: ' . $_POST['goto']);
         }
+        else
+        $message = 'You entered the wrong password.';
     }
 }
 $meta=[];
@@ -39,6 +41,7 @@ $meta['title']="Login";
 
 $content=<<<EOT
 <h1>{$meta['title']}</h1>
+
 <form method="post" autocomplete="off">
     <div class="form-group">
         <label for="email">Email</label>
@@ -58,8 +61,8 @@ $content=<<<EOT
             type="password"
         >
     </div>
-    <input name="goto" value="{$goto}" type="hidden">
     <input type="submit" class="btn btn-primary">
+    {$message}
 </form>
 EOT;
 
