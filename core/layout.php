@@ -51,7 +51,7 @@ function active($name){
               <li><a class="nav-link<?php echo active('register.php');?>"href="http://localhost/example.com/public/register.php">Register</a></li>
               <li><a class="nav-link<?php echo active('posts.php');?>"href="http://localhost/example.com/public/posts/index.php">Posts</a></li>
               <li><a class="nav-link<?php echo active('users.php');?>"href="http://localhost/example.com/public/users/index.php">User</a></li>
-
+              <li><a class="nav-link<?php echo active('resetpassword.php');?>"href="http://localhost/example.com/public/resetpassword.php">ResetPassword</a></li>
             </ul>
           </nav>
         </header>
