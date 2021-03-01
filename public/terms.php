@@ -1,6 +1,9 @@
 <?php
 require '../core/bootstrap.php';
 
+$meta=[];
+$meta['title']="terms";
+
 $content = <<<EOT
 
 <main>

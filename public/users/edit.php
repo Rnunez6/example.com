@@ -3,6 +3,8 @@ require '../../core/bootstrap.php';
 require '../../core/functions.php';
 require '../../core/db_connect.php';
 
+$meta=[];
+$meta['title']='Edit Users';
 
 checkSession();
 

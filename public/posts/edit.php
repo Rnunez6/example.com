@@ -3,6 +3,9 @@ require '../../core/functions.php';
 require '../../core/db_connect.php';
 require '../core/bootstrap.php';
 
+$meta=[];
+$meta['title']='Editing Posts';
+
 checkSession();
 
 // Get the post

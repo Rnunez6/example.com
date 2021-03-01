@@ -1,6 +1,7 @@
 <?php
 include '../../core/db_connect.php';
-
+$meta=[];
+$meta['title']='Post Home';
 
 $content=null;
 $stmt = $pdo->query("SELECT * FROM posts");

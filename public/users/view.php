@@ -1,6 +1,9 @@
 <?php
 include '../../core/db_connect.php';
 require '../../core/bootstrap.php';
+
+$meta=[];
+$meta['title']='User views';
 checkSession();
 
 $input = filter_input_array(INPUT_GET);

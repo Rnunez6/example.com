@@ -1,6 +1,7 @@
 <?php
 require '../core/bootstrap.php';
-
+$meta=[];
+$meta['title']="Privacy";
 $content = <<<EOT
 
 <main>

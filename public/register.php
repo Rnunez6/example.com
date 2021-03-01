@@ -110,7 +110,7 @@ $content=<<<EOT
     <div class="form-group">
         <label for="email">Email</label>
         <input 
-            class="form-control" 
+    
             id="email" 
             name="email" 
             type="email"
@@ -122,7 +122,7 @@ $content=<<<EOT
     <div class="form-group">
         <label for="first_name">First Name</label>
         <input 
-            class="form-control" 
+           
             id="first_name" 
             name="first_name"
             value="{$valid->userInput('first_name')}"
@@ -134,7 +134,7 @@ $content=<<<EOT
     <div class="form-group">
         <label for="last_name">Last Name</label>
         <input 
-            class="form-control" 
+          
             id="last_name" 
             name="last_name" 
             value="{$valid->userInput('last_name')}"
@@ -145,7 +145,7 @@ $content=<<<EOT
     <div class="form-group">
         <label for="password">Password</label>
         <input 
-            class="form-control" 
+          
             id="password" 
             name="password" 
             type="password"
@@ -157,7 +157,7 @@ $content=<<<EOT
     <div class="form-group">
         <label for="confirm_password">Confirm Password</label>
         <input 
-            class="form-control" 
+          
             id="confirm_password" 
             name="confirm_password" 
             type="password"

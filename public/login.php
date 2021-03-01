@@ -30,7 +30,7 @@ if(!empty($input)){
             $_SESSION['user']['id']=$row['id'];
 
             // 6.2 Redirect the user
-            header('LOCATION: ' . $_POST['goto']);
+            header('LOCATION: index.php');
         }
         else
         $message = 'You entered the wrong password.';
@@ -42,11 +42,10 @@ $meta['title']="Login";
 $content=<<<EOT
 <h1>{$meta['title']}</h1>
 
-<form method="post" autocomplete="off">
+<form method="post">
     <div class="form-group">
         <label for="email">Email</label>
         <input 
-            class="form-control"
             id="email"
             name="email"
             type="email"
@@ -55,7 +54,6 @@ $content=<<<EOT
     <div class="form-group">
         <label for="password">Password</label>
         <input 
-            class="form-control" 
             id="password" 
             name="password" 
             type="password"

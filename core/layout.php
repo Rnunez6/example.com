@@ -33,15 +33,23 @@ function active($name){
 
       <meta charset="UTF-8">
 
-        <link rel="stylesheet" type="text/css" href="./dist/css/main.min.css">
+        <!-- <link rel="stylesheet" type="text/css" href="./dist/css/main.min.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title><?php echo $meta['title']; ?> </title>
-       
+
+        
       </head>
-    <body>
-      <header>
-        <nav>
-            <ul>
+<body>
+  <div class= "container">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a><?php echo $meta['title']; ?></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
             
               <li><a class="nav-link<?php echo active('index.php');?>" href="http://localhost/example.com/public/index.php"> Home</a></li>
               <li><a class="nav-link<?php echo active('resume.php');?>" href="http://localhost/example.com/public/resume.php">Resume</a></li>
@@ -54,30 +62,26 @@ function active($name){
               <li><a class="nav-link<?php echo active('resetpassword.php');?>"href="http://localhost/example.com/public/resetpassword.php">ResetPassword</a></li>
             </ul>
           </nav>
-        </header>
-
-        <div class="row">
-            <div id="Content">
-                <?php echo $content; ?>
-            </div>
-            <div id="Sidebar">
-              <div id="AboutMe">
-                <div class="header">Hello, Roman</div>
-                <img src="https://www.gravatar.com/avatar/4678a33bf44c38e54a58745033b4d5c6?d=mm" alt="My Avatar" class="img-circle">
-              </div>
-            </div>
         </div>
+      </header>
 
-        <div id="Footer" class="clearfix">
-            <small>&copy; 2017 - MyAwesomeSite.com</small>
-            <ul role="navigation">
-                <li><a class="nav-link<?php echo active('terms.php');?>"href="http://localhost/example.com/public/terms.php">Terms</a></li>
-                <li><a class="nav-link<?php echo active('privacy.php');?>"href="http://localhost/example.com/public/privacy.php">Privacy</a></li>
-                <li><a class="nav-link<?php echo active('cookies.php');?>"href="http://localhost/example.com/public/cookies.php">Cookies</a></li>
-            </ul>
+      <div class="card text-center">
+ 
+       <div class="card-body">
+        <p class="card-text"><?php echo $content; ?></p>
+      </div>
+      <div class="card-footer text-muted">
+            <small>&copy; 2021 - MyAwesomeSite.com</small>
+                <a class="nav-link<?php echo active('terms.php');?>"href="http://localhost/example.com/public/terms.php">Terms</a>
+                <a class="nav-link<?php echo active('privacy.php');?>"href="http://localhost/example.com/public/privacy.php">Privacy</a>
+                <a class="nav-link<?php echo active('cookies.php');?>"href="http://localhost/example.com/public/cookies.php">Cookies</a>
         </div>
-    </div>
-
+    
+  </div>
   </body>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 
 </html>

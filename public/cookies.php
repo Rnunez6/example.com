@@ -1,6 +1,8 @@
 <?php
 require '../core/bootstrap.php';
 
+$meta=[];
+$meta['title']="Cookies";
 $content = <<<EOT
 
 <main>

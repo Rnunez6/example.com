@@ -1,6 +1,9 @@
 <?php
 include '../../core/db_connect.php';
 require '../../core/bootstrap.php';
+
+$meta=[];
+$meta['title']='User Home';
 checkSession();
 
 $content=null;

@@ -1,6 +1,8 @@
 <?php
 include '../../core/db_connect.php';
 require '../../core/bootstrap.php';
+$meta=[];
+$meta['title']='View Posts';
 
 checkSession();
 
